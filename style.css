@@ -1,0 +1,634 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+.main-page{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.mp-sliderbar{
+    display: flex;
+    flex-direction: column;
+    height: 86%;
+    width: 430px;
+    /* background-color: red; */
+    margin: 0.5rem 0 0.5rem 0.5rem;
+}
+
+/************************** Start Slide Nav Icon CSS*******************************************/
+
+.slide-nav{
+    height: 7rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.slide-nav a{
+    /* background-color: blueviolet; */
+    text-decoration: none;
+}
+
+.slide-nav a i{
+    font-size: 1.35rem;
+    margin-right: 1.2rem;
+}
+
+.s-set{
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.ss-icon{
+    opacity: 0.6;
+}
+
+.ss-icon:hover{
+    opacity: 1;
+}
+/******************************END OF Slide-Nav Icon************************************/
+
+/******************************Start Slide Library Css*********************************/
+.slide-lib{
+    height: 7rem;
+    flex-grow: 1;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: #121212;
+    margin-top: 0.5rem;
+}
+
+.lib-control{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: pink; */
+    padding: 1rem 1.4rem;
+}
+
+.lib-citem1{
+    opacity: 0.5;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.lib-effect:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.lib-icon{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.lib-icon + span{
+     margin: 0.3rem 0 0 1.2rem;
+}
+
+.lib-citem2{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.lib-citem2 i{
+    opacity: 0.5;
+    margin-left: 1.5rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    text-align: center;
+}
+
+.lib-citem2 i:hover{
+    background-color: #4444;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 1;
+    color: white;
+}
+/* box layout of slides bar */
+.slib-box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.lib-box{
+    /* height: 8.2rem; */
+    background-color: #242424;
+    width: 96%;
+    border-radius: 0.5rem;
+    margin: 0.4rem 0.5rem 1.5rem 0.5rem;
+    padding: 1rem 1.2rem;
+}
+
+.lib-box span{
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.lib-box p{
+    font-size: 0.85rem;
+    opacity: 0.9;
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+.lib-box button{
+    background-color:#fff;
+    color: black;
+    font-weight: 700;
+    height: 1.8rem;
+    width: 9rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    border: none;
+}
+
+.lib-box button:hover{
+    transform: scale(1.02);
+}
+/************************************End Slide Lib Css**********************************************************************/
+
+/************************************Main-Page Content Css Start (music cards)**********************************************/
+.mp-content{
+    height: 86%;
+
+    width: 1110px;
+    flex-grow: 1;
+    background: linear-gradient(to bottom, 
+    #222222 0%, #121212 13%, 
+    #121212 13%, #121212 50%, 
+    #121212 50%, #121212 100%);
+
+    /* background-color: #121212; */
+    border-radius: 0.8rem;
+    overflow: auto;
+    margin:0.5rem;  
+}
+/*******************Main page nav css(nav1 ,nav2)*/
+.mp-nav{
+    /* height: 7.5rem; */
+    width: 100%;
+    background: linear-gradient(to bottom, 
+    #222222 0%, #121212 50%, 
+    #121212 50%, #121212 100%
+    );
+
+    position: sticky;
+    top: 0;
+    z-index: 25;
+}
+
+.nav1{
+    height: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav1 .nav1-aerow{
+    padding-left: 1.2rem;
+    padding-top: 1rem;
+    height: 100%;
+}
+
+.nav1 .nav1-aerow img{
+    height: 1.7rem;
+    width: 1.7rem;
+    padding: 0.25rem;
+    background-color: #000000;
+    border-radius: 50%;
+    margin-right: 0.45rem;
+}
+
+.nav1 .nav1-user{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav1-user button{
+    border: none;
+    height: 2rem;
+    padding: 0.2rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.usr-btn1{
+    background-color: white;
+    color: black;
+}
+.usr-btn2{
+    background-color: black;
+    color: white;
+}
+.usr-btn2 i{
+    margin-right: 0.5rem;
+}
+
+.ui{
+    height: 1.8rem;
+    width: 1.8rem;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    background-color: #000000;
+    padding-top: 0.3rem;
+    border-radius: 50%;
+}
+
+.nav1-user button:hover,i:hover{
+    transform: scale(1.03);
+}
+
+.nav2{
+    height: 3.75rem;
+}
+
+.nav2 button{
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    background-color: #2E2E2E;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.nav2 .n2-btn:hover{
+    background-color: #2A2A2A;
+}
+
+.nav2 .n2-all{
+    color:black;
+    background-color: white;
+}
+/* **********************mp-Nav END*********************** */
+
+/***************Main page MUSIC CARD Css start****************/
+.mp-musiccard{
+    margin: 0.5rem 0.3rem;
+    margin-bottom: 2rem;
+}
+
+.mp-musiccard h4{
+    font-weight: 900;
+    font-size: 1.35rem;
+}
+
+.mcards{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.cards{
+    position: relative;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    width: 12rem;
+    text-wrap: wrap;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+.hover-icon{
+    display: none;
+    position: absolute;
+    bottom: 6rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    color: black;
+    background-color: #1BC056;
+    border-radius: 50%;
+    padding: 0.85rem 1.1rem;
+}
+
+.hover-icon:hover{
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.cards:hover{
+    display: block;
+    background-color: #1A1A1A;
+    cursor: pointer;
+}
+.cards:hover .hover-icon{
+    display: block;
+}
+
+.cards img{
+    border-radius: 0.5rem;
+    height: 10.5rem;
+    width: 10.5rem;
+}
+
+.cards .card-title{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0.3rem;
+}
+.cards span{
+    font-size: 1rem;
+    opacity: 0.65;
+}
+/************************Music Card END************************/
+
+.m-footer{
+    height: 6.8rem;
+}
+
+/**************************************Phone-view***********************************/
+
+
+.phone-nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    background-color: #121212;
+    width: 100%;
+    height: 5rem;
+    bottom: 0;
+    z-index: 50;
+    font-size: 1.4rem;
+
+    visibility: hidden; /* Hides the container */
+    height: 0; /* Sets the height to 0 */
+    overflow: hidden; /* Hides any content that may overflow */
+}
+
+.phone-nav div a{
+    text-decoration: none;
+}
+
+.phone-nav div i{
+    font-size: 1rem;
+}
+
+.phone-nav div .pnav-lib{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+.phone-nav div .pnav-logo{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.phone-nav .pn-box{
+    font-size: 0.7rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/************************************Phone-END*************************************/
+
+/***************************************Main-Page Content Css END **********************************************************/
+.mp-music{
+    height: 5.313rem;
+    width: 100vw;
+    position: fixed;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+}
+
+.left-music{
+    height: 100%;
+    width: 25%;
+}
+
+.right-music{
+    height: 100%;
+    width: 25%;
+}
+
+.main-music{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-music .music-control{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.3rem;
+}
+.main-music .music-control img{
+    height: 1rem;
+    width: 1rem;
+    margin: 0rem 0.65rem;
+    opacity: 0.8;
+}
+.main-music .music-control img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.main-music .music-control .music-play{
+    height: 2rem;
+    width: 2rem;
+    opacity: 1;
+}
+
+.main-music .music-control .music-play:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.music-bar{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.music-bar input{
+    height: 1rem;
+    appearance: none;
+    width: 65%;
+    background-color: transparent;
+    margin-top: 0.2rem;
+}
+
+.music-bar input::-webkit-slider-runnable-track{
+    background-color: #4D4D4D;
+    border-radius: 0.5rem;
+    height: 0.3rem;
+}
+.music-bar input::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.3rem;
+    width: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: white;
+}
+
+.music-bar input::-webkit-slider-thumb:hover{
+    height: 0.55rem;
+    width: 0.54rem;
+    border-radius: 0.55rem;
+    cursor: pointer;
+    background-color:#1bd760;
+    transform: scale(1.45);
+}
+
+/* *********************************Slide bar thumb setting of main content******************** */
+.mp-content::-webkit-scrollbar {
+   width: 0.7rem;  
+}
+
+/* Customize the appearance of the scrollbar handle */
+.mp-content::-webkit-scrollbar-thumb {
+    background: rgb(118, 118, 118);
+    border-radius: 0.75rem;
+}
+
+/* Change the scrollbar color when hovered over */
+.mp-content::-webkit-scrollbar-thumb:hover {
+    background: rgb(131, 131, 131);
+}
+
+/* Change the scrollbar color when clicked */
+.mp-content::-webkit-scrollbar-thumb:active {
+    background: rgb(104, 104, 104);
+}
+
+/* ******************************************Web-Responsiveness********************************** */
+
+@media (max-width:1330px){
+    .hide1{
+        display: none;
+    }
+    .nav1 .nav1-user{
+        height: 100%;
+        width: 35%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media (max-width:1050px){
+    .hide2{
+        display: none;
+    }
+    .nav1 .nav1-user{
+        height: 100%;
+        width: 18%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media (max-width:850px){
+    .hide3{
+        display: none;
+    }
+    .mp-sliderbar{
+        width: 15%;
+    }
+
+    .slide-nav a i{
+        font-size: 1.2rem;
+        margin-right: 0rem;
+        text-align: center;
+    }
+    .s-set{
+        padding: 0rem 0rem;
+        justify-content: center;
+    }
+    .lib-control{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0rem 0rem;
+        height: 6rem;
+    }
+    .lib-citem2 i{
+        margin: 0;
+        /* font-size: 1rem; */
+    }
+    .lib-icon{
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
+@media (max-width:600px){
+    .hide4{
+        display: none;
+    }
+}
+
+@media (max-width:500px){
+    .hide5{
+        display: none;
+        
+    }
+    .phone-nav{
+        visibility: visible; 
+        height: 4rem; 
+        overflow: visible; 
+    }
+    .cards img{
+        height: 8.5rem;
+        width: 8.5rem;
+    }
+
+    .cards{
+        width: 9.5rem;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+    .hover-icon{
+        bottom: 7rem;
+        right: 0.8rem;
+        font-size: 1rem;
+        padding: 0.6rem 0.78rem;
+    }
+
+    
+    .cards .card-title{
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-top: 0.25rem;
+    }
+    .cards span{
+        font-size: 0.7rem;
+    }
+    .mp-musiccard h4{
+        font-weight: 900;
+        font-size: 1rem;
+    }   
+}
+
